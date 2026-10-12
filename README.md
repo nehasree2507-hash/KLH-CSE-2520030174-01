@@ -1,36 +1,30 @@
 
-# DNA String Matching Algorithms
+# DNA Sequence Analysis Tool — String Matching Algorithms
 
-This module focuses on implementing DNA motif-searching algorithms to find occurrences of DNA patterns in genome sequences.
+**Course:** Data Structures and Algorithms - 3 (25CS2103E)
 
-## Algorithms
-- PatternMatcher
-- NaiveMatcher
-- KMPMatcher
-- RabinKarpMatcher
-- ZMatcher
-- AhoCorasick
-- SuffixArrayIndex
-- SuffixArrayMatcher
+**Team Member:** Nehasree Padamati  
+**Roll Number:** 2520030174
 
-## Responsibilities
-- Implement DNA motif-searching algorithms.
-- Find occurrences of DNA patterns in genome sequences.
-- Compare the results produced by different algorithms.
-- Explain how the matching algorithms work and analyze their time complexity.
+## My Contribution
 
-## Time Complexity
+My contribution focuses on implementing DNA motif-searching algorithms, finding pattern occurrences in genome sequences, comparing algorithm results, and analyzing their time complexity.
 
-| Algorithm | Time Complexity |
-|---|---|
-| Naive Matching | O(nm) |
-| KMP | O(n + m) |
-| Rabin–Karp | Average O(n + m), worst O(nm) |
-| Z Algorithm | O(n + m) |
-| Aho–Corasick | Depends on preprocessing, text length, and matches |
-| Suffix Array | Depends on construction and search methods |
+### Files Implemented
 
-Here, `n` represents the genome sequence length and `m` represents the DNA pattern length. These are standard theoretical complexities; actual complexity depends on the implementation.
+- `PatternMatcher.java` — Provides the pattern-matching abstraction.
+- `NaiveMatcher.java` — Searches for DNA patterns by checking each possible position.
+- `KMPMatcher.java` — Uses prefix information to avoid redundant comparisons.
+- `RabinKarpMatcher.java` — Uses hashing to identify potential pattern matches.
+- `ZMatcher.java` — Uses the Z-algorithm to find pattern occurrences.
+- `AhoCorasick.java` — Searches for multiple patterns using a trie and failure links.
+- `SuffixArrayIndex.java` — Provides suffix-array indexing for genome sequences.
+- `SuffixArrayMatcher.java` — Searches for DNA patterns using a suffix array.
 
-## Contribution
-**GitHub Commit Message:** `Add DNA string matching algorithms`
+### Algorithm Analysis
+
+The algorithms are compared based on their matching results and time complexity to understand their efficiency in DNA motif searching.
+
+### Project Goal
+
+These modules support the DNA Sequence Analysis Tool by providing different string-matching approaches to identify DNA motifs in genome sequences and compare their performance.
